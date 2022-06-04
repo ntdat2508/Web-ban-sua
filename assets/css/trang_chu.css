@@ -1,0 +1,60 @@
+/* Quy tắc làm 1 trang web
+b1: phân tích trang web 
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Tổng quan đến chi tiết
+b2: phân tích chi tiết 1 element
+1. Vị trí
+2. Kích thước( width, height)
+3. Màu sắc 
+4. Kiểu dáng( Kiểu chữ, hình tròn, vuông, ...)
+*/
+
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Chỉnh lại font của trang web */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background-color: #fff;
+    height: 60px;
+}
+
+#nav{
+
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a{
+    color: #87CEEB;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+}
+
+#nav li:hover a{
+    color: #83ba47;
+}
+
+#slider{
+    /* Cái này t viết để hiện cái header nhé vì header t để màu trắng */
+    background-color: #000;
+    height: 400px;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
