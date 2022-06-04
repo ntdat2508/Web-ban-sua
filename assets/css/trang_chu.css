@@ -24,6 +24,7 @@ html{
 #header{
     background-color: #fff;
     height: 60px;
+    
 }
 
 #nav{
@@ -46,11 +47,11 @@ html{
 }
 
 #slider{
-    /* Cái này t viết để hiện cái header nhé vì header t để màu trắng */
-    background-color: #000;
-    height: 400px;
+   /*Them ảnh trang chu */
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/silder/silder1.jpg') top center/ cover no-repeat;
 }
-
 #content{
 
 }
