@@ -24,11 +24,14 @@ html{
 #header{
     background-color: #fff;
     height: 60px;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #nav{
-
+    display: inline-block;
 }
 
 #nav li{
@@ -36,19 +39,39 @@ html{
 }
 
 #nav li a{
-    color: #87CEEB;
+    color: #203181;
     text-decoration: none;
     line-height: 60px;
     padding: 0 24px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #nav li:hover a{
     color: #83ba47;
+    padding-bottom: 20px;
+    border-bottom: solid #83ba47 3px; 
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 30px;
+}
+
+#header .search-icon{
+    color: #203181;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+#header .search-icon:hover{
+    color:#83ba47;
 }
 
 #slider{
    /*Them ảnh trang chu */
-    margin-top: 46px;
+    margin-top: 60px;
     padding-top: 50%;
     background: url('/assets/img/silder/silder1.jpg') top center/ cover no-repeat;
 }
