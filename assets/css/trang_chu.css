@@ -28,6 +28,8 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 #nav{
@@ -53,9 +55,23 @@ html{
     border-bottom: solid #83ba47 3px; 
 }
 
+#search{
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+#search .search-input{
+    padding-top: 15px;
+}
+#search .search-text{
+    height: 30px; 
+    border-radius: 20px solid #203181;
+}
+
 #header .search-btn{
-    float: right;
-    padding: 0 30px;
+    padding-right: 30px;
+    padding-left: 10px;
 }
 
 #header .search-icon{
