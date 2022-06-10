@@ -1,0 +1,55 @@
+.content-box{
+    position:relative;
+    top: 10em;
+    margin: auto;
+    width: 500px; 
+    height: 500px; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #000;
+}
+
+h2{
+    display: inline-block;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-box{
+    margin-bottom: 20px;
+}
+
+.span{ 
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+    font-weight: 400;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    background: transparent;
+}
+.input-box input[type="submit"]{
+    background-color: blue;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.register-link a{
+    color: blue;
+    text-decoration: none;
+}
+
