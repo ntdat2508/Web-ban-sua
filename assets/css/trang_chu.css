@@ -18,11 +18,11 @@ b2: phân tích chi tiết 1 element
 }
 /* Chỉnh lại font của trang web */
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #header{
-    background-color: #fff;
+    background-color: #203181;
     height: 60px;
     position: fixed;
     top: 0;
@@ -30,6 +30,7 @@ html{
     right: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #nav{
@@ -41,7 +42,7 @@ html{
 }
 
 #nav li a{
-    color: #203181;
+    color: #fff;
     text-decoration: none;
     line-height: 60px;
     padding: 0 24px;
@@ -50,9 +51,7 @@ html{
 }
 
 #nav li:hover a{
-    color: #83ba47;
-    padding-bottom: 20px;
-    border-bottom: solid #83ba47 3px; 
+    color: #D8CF4B;
 }
 
 #search{
@@ -66,7 +65,7 @@ html{
 }
 #search .search-text{
     height: 30px; 
-    border-radius: 20px solid #203181;
+    border-radius: 20px;
 }
 
 #header .search-btn{
@@ -75,38 +74,137 @@ html{
 }
 
 #header .search-icon{
-    color: #203181;
+    color: #fff;
     font-size: 25px;
     font-weight: 700;
     line-height: 60px;
 }
 
 #header .search-icon:hover{
-    color:#83ba47;
+    color:#D8CF4B;
 }
 
 #slider{
    /*Them ảnh trang chu */
     margin-top: 60px;
     padding-top: 50%;
-    background: url('/assets/img/silder/silder1.jpg') top center/ cover no-repeat;
+    background: url('/assets/img/Trang_chu/silder1.jpg') top center/ cover no-repeat;
 }
-#content{
 
+#content{
 }
+
+#content .milk-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .content-section{
+    width: 1000px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    /* text-align: center; */
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #203181;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic; /*chữ nghiêng*/
+    opacity: 0.6; /*Độ mờ*/
+}
+
+#content .about-text{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify; /*căn đều 2 bên*/
+    line-height: 1.4;
+}
+
+#content .milk-list{
+    margin-top: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#content .milk-item{
+    /* float: left; */
+    width: 30%;
+}
+
+#content .milk-name{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .buy-milk{
+    margin: 15px 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buy-milk .cost{
+    color:#ff69b4;
+    font-size: 20px;
+}
+
+.buy-milk .buy{
+    text-decoration: none;
+    background-color: #203181;
+    color:#fff;
+    padding: 5px 5px;
+    display: inline-block;
+}
+
+.buy-milk .buy:hover{
+    background-color:#ccc;
+    color: #203181;
+    transition: 0.5s;
+}
+
+#content .milk-img{
+    margin-top: 15px;
+    width: 154px;
+}
+
+
+
 
 #footer{
     width: 100%;
     height: 200px;
-    background: #ADE6F4;
+    background-color: #203181;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
 }
-.text{
-    padding: 12px;
+
+#footer .footer-content{
+    padding-top: 30px;
 }
+
+#footer .footer-heading,
+#footer .description,
+#footer .icon{
+    color: #fff;
+}
+
+#footer .description{
+    padding: 12px;
+    line-height: 20px;
+}
+
 .social-list{
     font-size: 30px;
     padding: 15px;
