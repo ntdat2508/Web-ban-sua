@@ -63,9 +63,15 @@ html{
 #search .search-input{
     padding-top: 15px;
 }
+
 #search .search-text{
     height: 30px; 
     border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 #header .search-btn{
