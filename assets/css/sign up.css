@@ -1,16 +1,13 @@
 body{
     background-color:#87cefa;
-    
-    
 }
 
 .content-box{
     position:relative;
-    top: 5em;
+    top: 10em;
     margin: auto;
-    margin-top: 100px;
-    width: 500px; 
-    height: 500px; 
+    width: 600px; 
+    height: 600px; 
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -55,7 +52,7 @@ h2{
     border: none;
     outline: none;
 }
-.signup a{
+.signin a{
     color: blue;
     text-decoration: none;
 }
