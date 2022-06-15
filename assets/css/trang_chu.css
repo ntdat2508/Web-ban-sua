@@ -16,11 +16,58 @@ b2: phân tích chi tiết 1 element
     margin: 0;
     box-sizing: border-box;
 }
-/* Chỉnh lại font của trang web */
+
 html{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Các class có thể dùng nhiều lần */
+.btn{
+    color:#fff;
+    background-color: #203181;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin: 15px 0;
+    border: none;
+}
+
+.btn:hover{
+    color:#203181;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-forth{
+    width: 25%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+/* Thanh điều hướng */
 #header{
     background-color: #203181;
     height: 60px;
@@ -33,6 +80,7 @@ html{
     flex-wrap: wrap;
 }
 
+/* Thanh điều hướng */
 #nav{
     display: inline-block;
 }
@@ -89,19 +137,18 @@ html{
     color:#D8CF4B;
 }
 
+/* Hình ảnh dưới thanh điều hướng */
 #slider{
-   /*Them ảnh trang chu */
     margin-top: 60px;
     padding-top: 50%;
     background: url('/assets/img/Trang_chu/silder1.jpg') top center/ cover no-repeat;
 }
 
-#content{
-}
-
+/* Content trang chủ */
 #content .milk-content{
     display: flex;
     justify-content: space-between;
+    margin: 40px 0;
 }
 
 #content .content-section{
@@ -113,78 +160,28 @@ html{
 
 #content .section-heading{
     font-size: 30px;
-    /* text-align: center; */
     font-weight: 500;
     letter-spacing: 3px;
     color: #203181;
 }
 
-#content .section-sub-heading{
-    font-size: 15px;
-    margin-top: 25px;
-    text-align: center;
-    font-style: italic; /*chữ nghiêng*/
-    opacity: 0.6; /*Độ mờ*/
+.milk-img{
+    width: 100%;
+    display: block;
 }
 
-#content .about-text{
-    font-size: 15px;
-    margin-top: 25px;
-    text-align: justify; /*căn đều 2 bên*/
-    line-height: 1.4;
+.milk-img:hover{
+    opacity: 0.6;
 }
 
-#content .milk-list{
-    margin-top: 48px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#content .milk-item{
-    /* float: left; */
-    width: 30%;
-}
-
-#content .milk-name{
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#content .buy-milk{
-    margin: 15px 0 64px 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.buy-milk .cost{
-    color:#ff69b4;
-    font-size: 20px;
-}
-
-.buy-milk .buy{
-    text-decoration: none;
-    background-color: #203181;
-    color:#fff;
-    padding: 5px 5px;
-    display: inline-block;
-}
-
-.buy-milk .buy:hover{
-    background-color:#ccc;
-    color: #203181;
-    transition: 0.5s;
-}
-
-#content .milk-img{
+.milk-cost{
     margin-top: 15px;
-    width: 154px;
+    color: #ff69b4;
+    font-size: 20px;
+    font-weight: 600px;
 }
 
-
-
-
+/* Footer */
 #footer{
     width: 100%;
     height: 200px;
@@ -213,4 +210,106 @@ html{
 .social-list{
     font-size: 30px;
     padding: 15px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display:flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+} 
+
+.modal-header{
+    background-color: #203181;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-milk{
+    background-color: #203181;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+
+#buy-milk:hover{
+    opacity: 0.9;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
