@@ -14,7 +14,7 @@ $('#submit_btn').click(function(){
             alert('Tài khoản hoặc mật khẩu bị sai')
         }
         else { 
-            window.location.replace("http://127.0.0.1:5500/admin.html")
+            window.location.replace("http://127.0.0.1:5500/User/admin.html")
         }
     } 
 });
