@@ -141,7 +141,7 @@ html{
 #slider{
     margin-top: 60px;
     padding-top: 50%;
-    background: url('/assets/img/Trang_chu/silder1.jpg') top center/ cover no-repeat;
+    background: url('/assets/img/San_pham/slider1.jpg') top center/ cover no-repeat;
 }
 
 /* Content trang chủ */
@@ -163,6 +163,11 @@ html{
     font-weight: 500;
     letter-spacing: 3px;
     color: #203181;
+}
+
+.section-heading li{
+    margin: 16px 8px;
+    font-size: 24px;
 }
 
 .milk-img{
