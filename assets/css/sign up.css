@@ -52,7 +52,13 @@ h2{
     border: none;
     outline: none;
 }
+.input-box input[type="submit"]:hover{
+    background-color: rgb(255, 0, 255);
+}
 .signin a{
     color: blue;
     text-decoration: none;
+}
+.signin a:hover{
+    color: rgb(255, 0, 255);
 }

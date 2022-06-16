@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #bedff8;
+}
+
+
+.rowad{
+    position: relative;
+    display: flex;
+    padding: 5px 20px;
+}
+
+/* Main */
+
+#mainad{
+    position: relative;
+    padding: 7% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*nhap*/
+.field{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px 10em;
+}
+input{
+    width: 80%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #454649b4;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.admin{
+    width: 80%;
+}
+/*title*/
+.admin > .title{
+    color: #ff1c1c;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.admin-form{
+    padding-top: 40px;
+    background-color:#eff0f5 ;
+    box-shadow: 0 0 5px #000;
+    border-radius: 6px;
+}
+
+.admin-form > .title{
+    padding: 20px 20px;
+    color: #ff1c1c;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+/*member width*/
+.admin-form > .title span:first-child,
+.member .num{
+    width: 3%;
+}
+.admin-form > .title span:nth-child(2),
+.member .id{
+    width: 20%;
+}
+.admin-form > .title span:nth-child(3),
+.member .name{
+    width: 35%;
+}
+.admin-form > .title span:nth-child(4),
+.member .brand_name{
+    width: 30%;
+}
+.admin-form > .title span:nth-child(5),
+.member .number{
+    width: 12%;
+}
+
+.member{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;
+    line-height: 65px;
+    font-weight: 550;
+}
+
+.member a{
+    color: black;
+    text-decoration: none;
+}
+
+.member:hover{
+    color: #fff;
+    background-color: #ff1c1c;
+}
+
+.buttons{
+    justify-content:space-evenly;
+}
+
+.btnad{
+    color: #ff1c1c;
+    width: 10%;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgb(161, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+    float: right;
+}
+.btnad:hover{
+    color: #fff;
+    background-color: #ff1c1c;
+}
