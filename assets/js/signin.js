@@ -1,15 +1,13 @@
 var username = ['admin']
 var password = ['khanh12345']
 $('#submit_btn').click(function(){
-    if($('#username').val().length === 0 && $('#password').val().length === 0) {
+    if($('#username').val().length == 0 || $('#password').val().length == 0) {
         alert('Hãy nhập đầy đủ thông tin')
     }
     else {
         var check = 0;
-        for (var i=0;i<username.length;i++){
-            if ($('#username').val()==username[i] && $('#password').val()==password[i])
-                check = 1
-        }
+        if ($('#username').val()==username && $('#password').val()==password){
+        check = 1 }
         if(check==0) {
             alert('Tài khoản hoặc mật khẩu bị sai')
         }
