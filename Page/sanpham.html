@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="col col-forth">
-                        <img src="/assets/img/San_pham/milk4.jpg" alt="Milk" class="milk-img">
+                        <img src="/assets/img/San_pham/milk2.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
                             <h3 class="milk-heading">Sữa Đậu Nành</h3> <br> <br>
                             <p class="milk-cost">20.000vnđ</p>
@@ -148,16 +148,16 @@
                     <div class="col col-forth">
                         <img src="/assets/img/San_pham/Yogurt5.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
-                            <h3 class="milk-heading">Sữa Chua vị <br>Dứa</h3>
+                            <h3 class="milk-heading">Sữa Chua vị Dứa</h3>
                             <p class="milk-cost">20.000vnđ</p>
                             <button class="btn js-buy-ticket">Mua</button>
                         </div>
                     </div>
 
                     <div class="col col-forth">
-                        <img src="/assets/img/San_pham/Yogurt6.jpg" alt="Milk" class="milk-img">
+                        <img src="/assets/img/San_pham/Yogurt5.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
-                            <h3 class="milk-heading">Sữa Chua vị <br>Lựu đỏ</h3>
+                            <h3 class="milk-heading">Sữa Chua vị Lựu đỏ</h3>
                             <p class="milk-cost">20.000vnđ</p>
                             <button class="btn js-buy-ticket">Mua</button>
                         </div>
@@ -166,16 +166,16 @@
                     <div class="col col-forth">
                         <img src="/assets/img/San_pham/Yogurt7.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
-                            <h3 class="milk-heading">Sữa Chua vị <br> Dâu</h3>
+                            <h3 class="milk-heading">Sữa Chua vị Dâu</h3>
                             <p class="milk-cost">20.000vnđ</p>
                             <button class="btn js-buy-ticket">Mua</button>
                         </div>
                     </div>
 
                     <div class="col col-forth">
-                        <img src="/assets/img/San_pham/Yogurt8.jpg" alt="Milk" class="milk-img">
+                        <img src="/assets/img/San_pham/Yogurt7.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
-                            <h3 class="milk-heading">Sữa Chua vị <br>Trái cây</h3>
+                            <h3 class="milk-heading">Sữa Chua vị Trái cây</h3>
                             <p class="milk-cost">20.000vnđ</p>
                             <button class="btn js-buy-ticket">Mua</button>
                         </div>
@@ -229,6 +229,15 @@
                 </div>
                 <div class="row milk-list">
                     
+                    <div class="col col-forth">
+                        <img src="/assets/img/San_pham/7.jpg" alt="Milk" class="milk-img">
+                        <div class="milk-info">
+                            <h3 class="milk-heading">Kem Vinamilk 3 trong 1 <br>vị Đậu xanh-Khoai môn- DỨa</h3>
+                            <p class="milk-cost">20.000vnđ</p>
+                            <button class="btn js-buy-ticket">Mua</button>
+                        </div>
+                    </div>
+
                     <div class="col col-forth ">
                         <img src="/assets/img/San_pham/cream5.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
@@ -237,7 +246,6 @@
                             <button class="btn js-buy-ticket">Mua</button>
                         </div>
                     </div>
-                    
 
                     <div class="col col-forth">
                         <img src="/assets/img/San_pham/cream6.jpg" alt="Milk" class="milk-img">
@@ -248,16 +256,6 @@
                         </div>
                     </div>
                     
-
-                    <div class="col col-forth">
-                        <img src="/assets/img/San_pham/7.jpg" alt="Milk" class="milk-img">
-                        <div class="milk-info">
-                            <h3 class="milk-heading">Kem Vinamilk 3 trong 1 <br>vị Đậu xanh-Khoai môn- DỨa</h3>
-                            <p class="milk-cost">20.000vnđ</p>
-                            <button class="btn js-buy-ticket">Mua</button>
-                        </div>
-                    </div>
-
                     <div class="col col-forth">
                         <img src="/assets/img/San_pham/cream8.jpg" alt="Milk" class="milk-img">
                         <div class="milk-info">
@@ -266,6 +264,7 @@
                             <button class="btn js-buy-ticket">Mua</button>
                         </div> 
                     </div>
+
                     
                 </div>
                 <div class="milk-content">
@@ -436,37 +435,7 @@
         </div>
     </div>
     
-<script>
-    const buyBtns = document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalContainer = document.querySelector('.js-modal-container')
-    const modalClose = document.querySelector('.js-modal-close')
-
-    //Hàm hiển thị modal mua vé( thêm class open vào modal)
-    function showBuyTickets(){
-        modal.classList.add('open')
-    }
-
-    //Hàm ẩn modal mua vé( gỡ bỏ class open của modal)
-    function hideBuyTickets(){
-        modal.classList.remove('open')
-    }    
-
-    //Lặp qua từng thẻ button và nghe hành vi click
-    for (const buyBtn of buyBtns){
-        buyBtn.addEventListener('click', showBuyTickets)
-    }
-
-    //Nghe hành vi click vào button close
-    modalClose.addEventListener('click', hideBuyTickets)
-
-    modal.addEventListener('click', hideBuyTickets)
-
-    modalContainer.addEventListener('click', function (event) {
-        event.stopPropagation()
-    } )
-
-</script>
+<script src="../assets/js/mua_hang.js"></script>
 
 </body>
 </html>
