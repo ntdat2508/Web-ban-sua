@@ -70,27 +70,15 @@ input{
 /*member width*/
 .admin-form > .title span:first-child,
 .member .num{
-    width: 3%;
+    width: 5%;
 }
 .admin-form > .title span:nth-child(2),
 .member .id{
-    width: 15%;
+    width: 45%;
 }
 .admin-form > .title span:nth-child(3),
 .member .name{
-    width: 25%;
-}
-.admin-form > .title span:nth-child(4),
-.member .brand_name{
-    width: 25%;
-}
-.admin-form > .title span:nth-child(5),
-.member .number{
-    width: 14%;
-}
-.admin-form > .title span:nth-child(6),
-.member .type{
-    width: 18%;
+    width: 50%;
 }
 
 .member{
