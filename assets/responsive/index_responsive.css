@@ -1,0 +1,73 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+
+    #nav{
+        display: block;
+    }
+    
+    #nav li{
+        display: block;
+    }
+
+    #nav li:hover a{
+        color: #D8CF4B;
+        background-color: #2196F3;
+    }
+    
+    #header .menu-btn{
+        display: block;
+    }
+    
+    #search{
+        display: none;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 740px){
+
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    .s-col-full{
+        width: 100%;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #nav{
+        display: block;
+    }
+    
+    #nav li{
+        display: block;
+    }
+
+    #nav li:hover a{
+        color: #D8CF4B;
+        background-color: #2196F3;
+    }
+    
+    #header .menu-btn{
+        display: block;
+    }
+    
+    #search{
+        display: none;
+    }
+
+    #content .contact-info{
+        display: block;
+    }
+
+}    

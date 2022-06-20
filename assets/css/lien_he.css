@@ -16,93 +16,23 @@
     margin: 16px 0;
 }
 
-#header{
-    background-color: #203181;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#nav{
-    display: inline-block;
-}
-
-#nav li{
-    display: inline-block;
-}
-
-#nav li a{
-    color: #fff;
-    text-decoration: none;
-    line-height: 60px;
-    padding: 0 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-#nav li:hover a{
-    color: #D8CF4B;
-}
-
-#search{
-    display: flex;
-    top: 0;
-    right: 0;
-}
-
-#search .search-input{
-    padding-top: 15px;
-}
-
-#search .search-text{
-    height: 30px; 
-    border-radius: 20px;
-    padding: 10px 20px;
-    outline: none;
-    border: 1px solid black;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-#header .search-btn{
-    padding-right: 30px;
-    padding-left: 10px;
-}
-
-#header .search-icon{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 60px;
-}
-
-#header .search-icon:hover{
-    color:#D8CF4B;
-}
-
 #slider{
     margin-top: 60px;
     padding-top: 50%;
     background: url('/assets/img/Lien_he/silder4.jpeg') top center/ cover no-repeat;
     text-align: center;
-    color: white;
+    color: #fff;
     font-size: 30px;
 }
 
-#slider .style{
-    width: 1000px;
-    margin: auto;
-    background-color: #fff;
-    color:#000;
+#content {
+    padding-left: 12px;
+    padding-right: 36px;
 }
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;

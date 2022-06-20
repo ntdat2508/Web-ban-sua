@@ -67,6 +67,10 @@ html{
     width: 100%;
 }
 
+.mt-16{
+    margin-top: 16px !important;
+}
+
 /* Thanh điều hướng */
 #header{
     background-color: #203181;
@@ -75,9 +79,11 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
+    z-index: 1;
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    overflow: hidden;
 }
 
 /* Thanh điều hướng */
@@ -90,6 +96,7 @@ html{
 }
 
 #nav li a{
+    display: block;
     color: #fff;
     text-decoration: none;
     line-height: 60px;
@@ -101,7 +108,17 @@ html{
 #nav li:hover a{
     color: #D8CF4B;
 }
+
+#header .menu-btn{
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #search{
+    float: right;
     display: flex;
     top: 0;
     right: 0;
@@ -121,11 +138,13 @@ html{
     letter-spacing: 1px;
 }
 
+#header .menu-btn,
 #header .search-btn{
     padding-right: 30px;
     padding-left: 10px;
 }
 
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 25px;
@@ -133,6 +152,7 @@ html{
     line-height: 60px;
 }
 
+#header .menu-icon:hover,
 #header .search-icon:hover{
     color:#D8CF4B;
 }
@@ -153,9 +173,12 @@ html{
 
 #content .content-section{
     width: 1000px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
